@@ -14,7 +14,7 @@ const Footer = () => {
           <Image
             src={logo}
             alt="lantan logo"
-            className="object-contain mb-3"
+            className="object-contain mb-3 cursor-pointer"
             width={60}
             height={39}
           />
@@ -23,11 +23,17 @@ const Footer = () => {
             dividend payments while watching your investments grow
           </p>
           <div className="flex gap-5 mb-7">
-            <p className="text-[#3D3D3D] font-medium">About us</p>
-            <p className="text-[#3D3D3D] font-medium">Features</p>
-            <p className="text-[#3D3D3D] font-medium">Contact us</p>
-            <p className="text-[#3D3D3D] font-medium">Help</p>
-            <p className="text-[#3D3D3D] font-medium">Privacy</p>
+            <p className="text-[#3D3D3D] font-medium cursor-pointer">
+              About us
+            </p>
+            <p className="text-[#3D3D3D] font-medium cursor-pointer">
+              Features
+            </p>
+            <p className="text-[#3D3D3D] font-medium cursor-pointer">
+              Contact us
+            </p>
+            <p className="text-[#3D3D3D] font-medium cursor-pointer">Help</p>
+            <p className="text-[#3D3D3D] font-medium cursor-pointer">Privacy</p>
           </div>
         </div>
         <div className="flex flex-col gap-4 items-start">
@@ -49,9 +55,17 @@ const Footer = () => {
           &copy; 2024 Lantan. All rights reserved.
         </p>
         <div className="flex gap-4">
-          <Image src={x} alt="x icon" />
-          <Image src={linkedIn} alt="linkedIn icon" />
-          <Image src={facebook} alt="facebook logo" />
+          <Image src={x} alt="x icon" className="cursor-pointer" />
+          <Image
+            src={linkedIn}
+            alt="linkedIn icon"
+            className="cursor-pointer"
+          />
+          <Image
+            src={facebook}
+            alt="facebook logo"
+            className="cursor-pointer"
+          />
         </div>
       </div>
     </div>

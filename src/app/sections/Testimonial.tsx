@@ -19,9 +19,21 @@ const Testimonial = () => {
       </div>
       <div className="flex items-center justify-center">
         <div className="border p-5 rounded-xl items-center gap-7 flex flex-col max-w-[900px]">
-          <Image src={testimonial_1} alt="tes" />
-          <Image src={testimonial_2} alt="tes" />
-          <Image src={testimonial_1} alt="tes" />
+          <Image
+            src={testimonial_1}
+            alt="testimonial"
+            className="cursor-pointer"
+          />
+          <Image
+            src={testimonial_2}
+            alt="testimonial"
+            className="cursor-pointer"
+          />
+          <Image
+            src={testimonial_1}
+            alt="testimonial"
+            className="cursor-pointer"
+          />
         </div>
       </div>
     </div>

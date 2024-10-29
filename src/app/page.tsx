@@ -12,11 +12,13 @@ const page = () => {
     <div>
       <Header />
       <Hero />
-      <SocialProof />
-      <Invest />
-      <Testimonial />
-      <Register />
-      <Footer />
+      <div className="px-10">
+        <SocialProof />
+        <Invest />
+        <Testimonial />
+        <Register />
+        <Footer />
+      </div>
     </div>
   );
 };

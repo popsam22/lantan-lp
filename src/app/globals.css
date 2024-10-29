@@ -6,7 +6,7 @@
 @layer base {
   html {
     font-family: Inter, system-ui, sans-serif;
-    margin: 5px;
+    margin-top: 15px;
   }
   :root {
     --radius: 0.5rem;

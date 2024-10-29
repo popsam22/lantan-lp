@@ -3,7 +3,7 @@ import phone from "../../../public/Frame 13.svg";
 
 const Hero = () => {
   return (
-    <div className="mt-10 items-center justify-center flex-col flex">
+    <div className="mt-10 items-center justify-center flex-col flex min-h-screen w-full">
       <div className="border border-[#2382DD] rounded-full border-dashed p-2 mb-2 w-[313px] items-center flex justify-center">
         <p className="text-[#075AAA] font-semibold text-sm ">
           10.3% average investor returns in 2023
@@ -21,8 +21,16 @@ const Hero = () => {
           your hard-earned savings for the future
         </p>
       </div>
-      <div>
-        <Image src={phone} alt="phone" />
+      <div className="relative w-full flex items-center justify-center">
+        <Image src={phone} alt="phone" className="object-contain" />
+        <div
+          className="absolute bottom-0 w-full h-[238px] bg-gradient-to-b opacity-30"
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom, white, rgba(77, 168, 255, 0.48) 71%)",
+            filter: "blur(4px)",
+          }}
+        />
       </div>
     </div>
   );

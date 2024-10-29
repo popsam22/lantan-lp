@@ -14,13 +14,13 @@ const Header = () => {
       </div>
       <div className="flex gap-16 items-center">
         <div className="flex gap-10">
-          <p className="text-[#3D3D3D] text-sm">About</p>
-          <p className="text-[#3D3D3D] text-sm">Features</p>
-          <p className="text-[#3D3D3D] text-sm">Team</p>
-          <p className="text-[#3D3D3D] text-sm">Contact us</p>
+          <p className="text-[#3D3D3D] text-sm cursor-pointer">About</p>
+          <p className="text-[#3D3D3D] text-sm cursor-pointer">Features</p>
+          <p className="text-[#3D3D3D] text-sm cursor-pointer">Team</p>
+          <p className="text-[#3D3D3D] text-sm cursor-pointer">Contact us</p>
         </div>
         <div>
-          <button className="bg-[#075AAA] text-[#FFFFFF] rounded-lg w-[153px] p-3">
+          <button className="bg-[#075AAA] text-[#FFFFFF] rounded-lg w-[153px] p-3 text-sm font-semibold">
             Download App
           </button>
         </div>

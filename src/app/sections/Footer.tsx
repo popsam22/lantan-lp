@@ -8,21 +8,21 @@ import facebook from "../../../public/facebook.svg";
 
 const Footer = () => {
   return (
-    <div className="mt-8 flex flex-col p-6">
+    <div className="mt-3 flex flex-col p-6">
       <div className="border-b mb-4 flex w-full justify-between">
         <div className="">
           <Image
             src={logo}
             alt="lantan logo"
-            className="object-contain mb-3 cursor-pointer"
+            className="object-contain mb-7 cursor-pointer"
             width={60}
             height={39}
           />
-          <p className="text-[#7A7A7A] mb-7 max-w-[320px] ">
+          <p className="text-[#7A7A7A] mb-7 max-w-[320px]">
             Maximize your wealth — earn consistent passive income through
             dividend payments while watching your investments grow
           </p>
-          <div className="flex gap-5 mb-7">
+          <div className="flex gap-7 mb-7">
             <p className="text-[#3D3D3D] font-medium cursor-pointer">
               About us
             </p>
@@ -37,7 +37,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 items-start">
-          <h1 className="text-[#075AAA] cursor-pointer">Get the app</h1>
+          <h1 className="text-[#075AAA] cursor-pointer font-semibold">
+            Get the app
+          </h1>
           <Image
             src={appstore}
             alt="appstore logo"
@@ -54,17 +56,27 @@ const Footer = () => {
         <p className="text-[#5C5C5C]">
           &copy; 2024 Lantan. All rights reserved.
         </p>
-        <div className="flex gap-4">
-          <Image src={x} alt="x icon" className="cursor-pointer" />
+        <div className="flex gap-5">
+          <Image
+            src={x}
+            alt="x icon"
+            className="cursor-pointer"
+            width={24}
+            height={24}
+          />
           <Image
             src={linkedIn}
             alt="linkedIn icon"
             className="cursor-pointer"
+            width={24}
+            height={24}
           />
           <Image
             src={facebook}
             alt="facebook logo"
             className="cursor-pointer"
+            width={24}
+            height={24}
           />
         </div>
       </div>

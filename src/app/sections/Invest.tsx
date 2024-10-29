@@ -7,7 +7,7 @@ import property from "../../../public/Frame 1.svg";
 
 const Invest = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-5 w-full">
       <div className="flex flex-col items-center w-full">
         <div className="flex justify-center items-center gap-4 max-w-[438px] p-3">
           <p className="text-[#075AAA] font-semibold uppercase text-sm">

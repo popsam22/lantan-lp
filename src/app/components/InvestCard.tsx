@@ -14,7 +14,7 @@ const InvestCard = ({
   return (
     <div
       className={clsx(
-        "flex justify-between p-10",
+        "flex justify-between py-7 px-3",
         reverse ? "flex-row-reverse" : ""
       )}
     >
@@ -27,7 +27,7 @@ const InvestCard = ({
         >
           {header}
         </h1>
-        <p className="text-[#3D3D3D] text-3xl font-semibold max-w-[370px]">
+        <p className="text-[#3D3D3D] text-3xl font-semibold max-w-[370px] tracking-wide mb-3">
           {title}
         </p>
         <p className="text-[#5C5C5C] text-sm mb-10">{subTitle}</p>

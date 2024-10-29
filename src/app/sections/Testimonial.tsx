@@ -7,18 +7,24 @@ const Testimonial = () => {
   return (
     <div>
       <div className="flex flex-col items-center w-full mb-10">
-        <div className="flex justify-center items-center gap-4 max-w-[438px] p-3">
-          <p className="text-[#075AAA] font-semibold uppercase text-sm">
+        <div className="flex justify-center items-center gap-4 max-w-[438px] p-3 cursor-pointer">
+          <p className="text-[#075AAA] font-semibold uppercase text-sm ">
             Testimonials
           </p>
-          <Image src={arrow} alt="arrow right" width={24} height={24} />
+          <Image
+            src={arrow}
+            alt="arrow right"
+            width={24}
+            height={24}
+            className="object-contain"
+          />
         </div>
         <p className="text-[#3D3D3D] font-semibold text-3xl max-w-[438px] text-center p-3">
           Why Customers Trust Us
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <div className="border p-5 rounded-xl items-center gap-7 flex flex-col max-w-[900px]">
+        <div className="border p-5 rounded-xl items-center gap-7 flex flex-col max-w-[900px] mb-20">
           <Image
             src={testimonial_1}
             alt="testimonial"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../../../public/lantanplustext@4x 1.svg";
+import hamburger from "../../../public/hamburger.svg";
 const Header = () => {
   return (
     <div className="flex justify-between overflow-x-hidden px-6 py-2">
@@ -12,7 +13,14 @@ const Header = () => {
           className="object-contain"
         />
       </div>
-      <div className="flex gap-16 items-center">
+      <Image
+        src={hamburger}
+        alt="hamburger icon"
+        width={46}
+        height={47}
+        className="object-contain cursor-pointer"
+      />
+      <div className="flex gap-16 items-center max-sm:hidden">
         <div className="flex gap-10">
           <p className="text-[#3D3D3D] text-sm cursor-pointer">About</p>
           <p className="text-[#3D3D3D] text-sm cursor-pointer">Features</p>

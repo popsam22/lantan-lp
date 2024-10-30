@@ -14,11 +14,11 @@ const InvestCard = ({
   return (
     <div
       className={clsx(
-        "flex justify-between py-7 px-3",
+        "flex justify-between max-lg:gap-10 max-md:flex-col py-7 max-md:py-5 max-md:px-0 px-3",
         reverse ? "flex-row-reverse" : ""
       )}
     >
-      <div className="flex max-w-[420px] flex-col">
+      <div className="flex max-w-[420px] max-lg:max-w-[300px] flex-col">
         <h1
           className={clsx(
             "text-lg font-semibold mb-3",
@@ -27,10 +27,10 @@ const InvestCard = ({
         >
           {header}
         </h1>
-        <p className="text-[#3D3D3D] text-3xl font-semibold max-w-[370px] tracking-wide mb-3">
+        <p className="text-[#3D3D3D] text-3xl max-lg:text-2xl font-semibold max-w-[370px] max-lg:max-w-[290px] max-lg:tracking-normal tracking-wide mb-3">
           {title}
         </p>
-        <p className="text-[#5C5C5C] text-sm mb-10">{subTitle}</p>
+        <p className="text-[#5C5C5C] text-sm mb-10 max-lg:mb-4">{subTitle}</p>
         {button ? (
           <button className="bg-[#F1F6FE] w-[153px] py-4 px-5 text-[#206AB2] rounded-lg font-semibold text-sm">
             {buttonText}
@@ -43,7 +43,13 @@ const InvestCard = ({
         )}
       </div>
       <div>
-        <Image src={media} alt="portfolio" width={688} height={400} />
+        <Image
+          src={media}
+          alt="portfolio"
+          width={688}
+          height={400}
+          className="object-contain"
+        />
       </div>
     </div>
   );

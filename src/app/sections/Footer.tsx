@@ -8,8 +8,8 @@ import facebook from "../../../public/facebook.svg";
 
 const Footer = () => {
   return (
-    <div className="mt-3 flex flex-col p-6">
-      <div className="border-b mb-4 flex w-full justify-between">
+    <div className="mt-3 flex flex-col p-6 max-md:p-0">
+      <div className="border-b mb-4 flex w-full justify-between max-md:flex-col">
         <div className="">
           <Image
             src={logo}
@@ -18,11 +18,11 @@ const Footer = () => {
             width={60}
             height={39}
           />
-          <p className="text-[#7A7A7A] mb-7 max-w-[320px]">
+          <p className="text-[#7A7A7A] mb-7 max-w-[320px] max-md:max-w-[343px]">
             Maximize your wealth — earn consistent passive income through
             dividend payments while watching your investments grow
           </p>
-          <div className="flex gap-7 mb-7">
+          <div className="flex gap-7 mb-7 max-md:grid max-md:grid-cols-2">
             <p className="text-[#3D3D3D] font-medium cursor-pointer">
               About us
             </p>
@@ -40,19 +40,21 @@ const Footer = () => {
           <h1 className="text-[#075AAA] cursor-pointer font-semibold">
             Get the app
           </h1>
-          <Image
-            src={appstore}
-            alt="appstore logo"
-            className="object-contain cursor-pointer"
-          />
-          <Image
-            src={playstore}
-            alt="playsotre logo"
-            className="object-contain cursor-pointer"
-          />
+          <div className="max-md:flex max-md:gap-4 max-md:mb-7">
+            <Image
+              src={appstore}
+              alt="appstore logo"
+              className="object-contain cursor-pointer mb-3"
+            />
+            <Image
+              src={playstore}
+              alt="playstore logo"
+              className="object-contain cursor-pointer mb-3"
+            />
+          </div>
         </div>
       </div>
-      <div className="flex justify-between py-4">
+      <div className="flex justify-between py-4 max-md:py-2 max-md:flex-col-reverse max-md:gap-4">
         <p className="text-[#5C5C5C]">
           &copy; 2024 Lantan. All rights reserved.
         </p>

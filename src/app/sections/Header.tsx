@@ -20,7 +20,7 @@ const Header = () => {
         height={47}
         className="object-contain cursor-pointer"
       />
-      <div className="flex gap-16 items-center max-sm:hidden">
+      <div className="flex gap-16 items-center max-md:hidden">
         <div className="flex gap-10">
           <p className="text-[#3D3D3D] text-sm cursor-pointer">About</p>
           <p className="text-[#3D3D3D] text-sm cursor-pointer">Features</p>

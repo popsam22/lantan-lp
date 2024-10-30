@@ -6,7 +6,7 @@ import testimonial_2 from "../../../public/Frame 254.svg";
 const Testimonial = () => {
   return (
     <div>
-      <div className="flex flex-col items-center w-full mb-10">
+      <div className="flex flex-col items-center w-full mb-10 max-md:mb-5">
         <div className="flex justify-center items-center gap-4 max-w-[438px] p-3 cursor-pointer">
           <p className="text-[#075AAA] font-semibold uppercase text-sm ">
             Testimonials
@@ -19,12 +19,12 @@ const Testimonial = () => {
             className="object-contain"
           />
         </div>
-        <p className="text-[#3D3D3D] font-semibold text-3xl max-w-[438px] text-center p-3">
+        <p className="text-[#3D3D3D] font-semibold text-3xl max-lg:text-2xl max-w-[438px] text-center p-3">
           Why Customers Trust Us
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <div className="border p-5 rounded-xl items-center gap-7 flex flex-col max-w-[900px] mb-20">
+        <div className="border p-5 rounded-xl items-center gap-7 flex flex-col max-w-[900px] mb-20 max-md:mb-10">
           <Image
             src={testimonial_1}
             alt="testimonial"

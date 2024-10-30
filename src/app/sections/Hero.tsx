@@ -22,7 +22,11 @@ const Hero = () => {
         </p>
       </div>
       <div className="relative w-full flex items-center justify-center">
-        <Image src={phone} alt="phone" className="object-contain" />
+        <Image
+          src={phone}
+          alt="phone"
+          className="object-contain max-md:w-[410px]"
+        />
         <div
           className="absolute border-b bottom-0 w-full h-[238px] bg-gradient-to-b opacity-30"
           style={{

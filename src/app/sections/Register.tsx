@@ -7,7 +7,7 @@ const Register = () => {
       <p className="text-[#7A7A7A] max-md:text-center text-xl mb-7 max-md:text-sm">
         Stay up to date with the latest news and announcements
       </p>
-      <div className="flex gap-5 max-md:gap-2 mb-7 max-md:max-w-[373px]">
+      <div className="flex gap-5 max-md:gap-2 mb-7 max-md:max-w-[323px]">
         <input
           type="text"
           placeholder="Enter your email"

@@ -23,17 +23,29 @@ const Header = () => {
           width={134}
           height={44}
           className="object-contain"
+          priority
         />
       </div>
       <div className="md:hidden">
-        <Image
-          src={open ? close_button : hamburger}
-          alt="toggle icon"
-          width={28}
-          height={28}
-          className="object-contain cursor-pointer"
-          onClick={handleIconToggle}
-        />
+        {open ? (
+          <Image
+            src={close_button}
+            alt="toggle icon"
+            width={24}
+            height={24}
+            className="object-contain cursor-pointer mt-2.5"
+            onClick={handleIconToggle}
+          />
+        ) : (
+          <Image
+            src={hamburger}
+            alt="toggle icon"
+            width={38}
+            height={38}
+            className="object-contain cursor-pointer"
+            onClick={handleIconToggle}
+          />
+        )}
       </div>
       <div className="flex gap-16 items-center max-md:hidden">
         <div className="flex gap-10">

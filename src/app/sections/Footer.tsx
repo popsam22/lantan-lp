@@ -22,7 +22,7 @@ const Footer = () => {
             Maximize your wealth — earn consistent passive income through
             dividend payments while watching your investments grow
           </p>
-          <div className="flex gap-7 mb-7 max-md:grid max-md:grid-cols-2">
+          <div className="flex gap-7 max-md:gap-3 mb-7 max-md:grid max-md:grid-cols-2">
             <p className="text-[#3D3D3D] font-medium cursor-pointer">
               About us
             </p>

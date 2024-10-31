@@ -21,7 +21,7 @@ const InvestCard = ({
       <div className="flex max-w-[420px] max-lg:max-w-[300px] flex-col">
         <h1
           className={clsx(
-            "text-lg font-semibold mb-3",
+            "text-lg font-semibold mb-3 max-md:mb-5",
             reverse ? "text-[#01BD5D]" : "text-[#075AAA]"
           )}
         >
@@ -30,7 +30,9 @@ const InvestCard = ({
         <p className="text-[#3D3D3D] text-3xl max-lg:text-2xl font-semibold max-w-[370px] max-lg:max-w-[290px] max-lg:tracking-normal tracking-wide mb-3">
           {title}
         </p>
-        <p className="text-[#5C5C5C] text-sm mb-10 max-lg:mb-4">{subTitle}</p>
+        <p className="text-[#5C5C5C] text-sm mb-10 max-lg:mb-5 max-md:mb-8">
+          {subTitle}
+        </p>
         {button ? (
           <button className="bg-[#F1F6FE] w-[153px] py-4 px-5 text-[#206AB2] rounded-lg font-semibold text-sm">
             {buttonText}

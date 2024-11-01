@@ -21,7 +21,7 @@ const InvestCard = ({
       <div className="flex max-w-[420px] max-lg:max-w-[300px] flex-col">
         <h1
           className={clsx(
-            "text-lg font-semibold mb-3 max-md:mb-5",
+            "text-lg font-semibold mb-3 max-md:mb-3",
             reverse ? "text-[#01BD5D]" : "text-[#075AAA]"
           )}
         >
@@ -34,11 +34,11 @@ const InvestCard = ({
           {subTitle}
         </p>
         {button ? (
-          <button className="bg-[#F1F6FE] w-[153px] py-4 px-5 text-[#206AB2] rounded-lg font-semibold text-sm">
+          <button className="bg-[#F1F6FE] w-[153px] py-4 px-5 text-[#206AB2] rounded-lg font-semibold text-sm max-md:mb-10">
             {buttonText}
           </button>
         ) : (
-          <div className="flex gap-4">
+          <div className="flex gap-4 mb-10">
             <Image src={appstore} alt="appstore logo" />
             <Image src={playstore} alt="playstore logo" />
           </div>
@@ -50,7 +50,7 @@ const InvestCard = ({
           alt="portfolio"
           width={688}
           height={400}
-          className="object-contain"
+          className="object-contain mb-10"
         />
       </div>
     </div>

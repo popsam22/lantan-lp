@@ -1,5 +1,5 @@
 import Image from "next/image";
-import phone from "../../../public/Frame 13.png";
+import phone from "../../../public/Frame 13x.png";
 
 const Hero = () => {
   return (
@@ -27,6 +27,8 @@ const Hero = () => {
           alt="phone"
           className="object-contain max-md:w-[410px]"
           priority={true}
+          width={498}
+          height={434}
           loading="eager"
         />
         <div

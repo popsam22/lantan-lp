@@ -1,9 +1,9 @@
 import Image from "next/image";
 import arrow from "../../../public/Arrow_Right_MD.svg";
 import InvestCard from "../components/InvestCard";
-import img from "../../../public/Frame 30.svg";
-import buyslot from "../../../public/Frame.svg";
-import property from "../../../public/Frame 1.svg";
+import img from "../../../public/earn.png";
+import buyslot from "../../../public/invest.png";
+import property from "../../../public/explore.png";
 
 const Invest = () => {
   return (
@@ -23,7 +23,7 @@ const Invest = () => {
         header="Explore"
         title="Browse through our Verified Products"
         subTitle="Sign up in less than 3 minutes and discover a curated selection of trusted products, each verified for great returns"
-        media={property}
+        media={property.src}
       />
       <InvestCard
         header="Invest"
@@ -31,7 +31,7 @@ const Invest = () => {
         subTitle="Flexible investment options designed to help you build wealth on your terms."
         button={true}
         buttonText="Invest Now"
-        media={buyslot}
+        media={buyslot.src}
         reverse={true}
       />
       <InvestCard
@@ -41,7 +41,7 @@ const Invest = () => {
         no worries, just steady returns to support your lifestyle"
         button={true}
         buttonText="Invest Now"
-        media={img}
+        media={img.src}
       />
     </div>
   );

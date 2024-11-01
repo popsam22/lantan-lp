@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../../public/lantanplustext@4x 1.svg";
+import logo from "../../../public/lantanlogo.png";
 import hamburger from "../../../public/hamburger.svg";
 import close_button from "../../../public/close-button.svg";
 import playstore from "../../../public/btn-playstore.svg";
@@ -18,7 +18,7 @@ const Header = () => {
     <div className="flex justify-between overflow-x-hidden px-6 py-2">
       <div>
         <Image
-          src={logo}
+          src={logo.src}
           alt="lantan"
           width={134}
           height={44}

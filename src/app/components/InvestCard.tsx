@@ -14,7 +14,7 @@ const InvestCard = ({
   return (
     <div
       className={clsx(
-        "flex justify-between max-lg:gap-10 max-md:flex-col py-7 max-md:py-5 max-md:px-0 px-3",
+        "flex justify-evenly max-md:flex-col py-10 max-md:py-5 max-md:px-0 px-3",
         reverse ? "flex-row-reverse" : ""
       )}
     >

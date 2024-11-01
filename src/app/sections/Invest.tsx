@@ -15,7 +15,7 @@ const Invest = () => {
           </p>
           <Image src={arrow} alt="arrow right" width={24} height={24} />
         </div>
-        <p className="text-[#3D3D3D] font-semibold text-3xl max-md:text-2xl max-md:max-w-[356px] max-md:mb-2 max-w-[438px] text-center p-3">
+        <p className="text-[#3D3D3D] font-semibold text-3xl max-md:text-2xl max-md:max-w-[356px] max-md:mb-2 max-w-[468px] text-center p-3">
           Build Your Investment Portfolio with Ease, Start Now
         </p>
       </div>

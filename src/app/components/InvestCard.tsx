@@ -51,6 +51,8 @@ const InvestCard = ({
           width={688}
           height={400}
           className="object-contain mb-10"
+          priority={true}
+          loading="eager"
         />
       </div>
     </div>

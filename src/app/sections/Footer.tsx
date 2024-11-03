@@ -5,6 +5,7 @@ import appstore from "../../../public/btn-appstore.svg";
 import x from "../../../public/x.svg";
 import linkedIn from "../../../public/LinkedIn.svg";
 import facebook from "../../../public/facebook.svg";
+import footer_bg from "../../../public/bg-footer.png";
 
 const Footer = () => {
   return (
@@ -36,11 +37,19 @@ const Footer = () => {
             <p className="text-[#3D3D3D] font-medium cursor-pointer">Privacy</p>
           </div>
         </div>
-        <div className="flex flex-col gap-4 items-start">
+        <div className="relative flex flex-col items-start gap-4">
+          <div className="absolute inset-0 h-full w-full -z-10">
+            <Image
+              src={footer_bg}
+              alt="lantan footer"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <h1 className="text-[#075AAA] cursor-pointer font-semibold">
             Get the app
           </h1>
-          <div className="max-md:flex max-md:gap-4 max-md:mb-7">
+          <div className="flex md:flex-col  gap-4 mb-7 max-md:flex max-md:gap-4 max-md:mb-7">
             <Image
               src={appstore}
               alt="appstore logo"

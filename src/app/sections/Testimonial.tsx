@@ -1,7 +1,7 @@
 import Image from "next/image";
 import arrow from "../../../public/Arrow_Right_MD.svg";
-import testimonial_1 from "../../../public/Frame 253.svg";
-import testimonial_2 from "../../../public/Frame 254.svg";
+import testimonial_1 from "../../../public/Frame 254.png";
+import testimonial_2 from "../../../public/Frame 255.png";
 
 const Testimonial = () => {
   return (
@@ -24,22 +24,70 @@ const Testimonial = () => {
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <div className="border p-5 rounded-xl items-center gap-7 flex flex-col max-w-[900px] mb-20 max-md:mb-10">
-          <Image
-            src={testimonial_1}
-            alt="testimonial"
-            className="cursor-pointer"
-          />
-          <Image
-            src={testimonial_2}
-            alt="testimonial"
-            className="cursor-pointer"
-          />
-          <Image
-            src={testimonial_1}
-            alt="testimonial"
-            className="cursor-pointer"
-          />
+        <div className="border p-5 max-md:p-2 rounded-xl items-center gap-7 max-md:gap-3 flex flex-col max-w-[900px] mb-20">
+          <div className="relative">
+            <Image
+              src={testimonial_2}
+              alt="testimonial"
+              className="w-full h-full object-cover max-md:w-[380px] max-md:h-[119px] rounded-lg"
+            />
+            <div className="absolute inset-0 flex gap-16 max-md:gap-5 justify-between p-4 max-md:p-2 text-white">
+              <div className="flex flex-col gap-2 max-md:gap-1 justify-center">
+                <p className="text-2xl font-semibold max-md:text-lg">
+                  Felix Emman
+                </p>
+                <p className="text-sm max-md:text-xs">CEO, Bibu LTD</p>
+              </div>
+              <div className="flex justify-center items-center max-w-[345px] max-md:max-w-[210px]">
+                <p className="text-sm max-md:text-xs">
+                  Lantan has been a game-changer for my finances. The rental
+                  income provides me with peace of mind and financial stability.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src={testimonial_1}
+              alt="testimonial"
+              className="w-full h-full object-cover max-md:w-[380px] max-md:h-[119px] rounded-lg"
+            />
+            <div className="absolute inset-0 flex gap-16 max-md:gap-5 justify-between p-4 max-md:p-2 text-white">
+              <div className="flex flex-col gap-2 max-md:gap-1 justify-center">
+                <p className="text-2xl font-semibold max-md:text-lg">
+                  Felix Emman
+                </p>
+                <p className="text-sm max-md:text-xs">CEO, Bibu LTD</p>
+              </div>
+              <div className="flex justify-center items-center max-w-[345px] max-md:max-w-[210px]">
+                <p className="text-sm max-md:text-xs">
+                  “I’ve built a growing portfolio with Lantan. The best part?
+                  It’s so easy, and I can track my earnings anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src={testimonial_2}
+              alt="testimonial"
+              className="w-full h-full object-cover max-md:w-[380px] max-md:h-[119px] rounded-lg"
+            />
+            <div className="absolute inset-0 flex gap-16 max-md:gap-3 justify-between p-4 max-md:p-2 text-white">
+              <div className="flex flex-col gap-2 max-md:gap-1 justify-center">
+                <p className="text-2xl font-semibold max-md:text-lg">
+                  Felix Emman
+                </p>
+                <p className="text-sm max-md:text-xs">CEO, Bibu LTD</p>
+              </div>
+              <div className="flex justify-center items-center max-w-[345px] max-md:max-w-[210px]">
+                <p className="text-sm max-md:text-xs">
+                  Lantan has been a game-changer for my finances. The rental
+                  income provides me with peace of mind and financial stability.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

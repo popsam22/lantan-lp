@@ -15,7 +15,11 @@ const page = () => {
       <div className="px-10">
         <SocialProof />
         <Invest />
+      </div>
+      <div className="max-md:px-2 px-10">
         <Testimonial />
+      </div>
+      <div className="px-10">
         <Register />
         <Footer />
       </div>
